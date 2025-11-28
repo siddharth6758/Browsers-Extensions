@@ -1,4 +1,6 @@
 fastapi[standard]
 uvicorn
 requests
-firebase-admin
+jinja2
+pyrebase4
+python-dotenv

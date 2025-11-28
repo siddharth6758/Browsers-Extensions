@@ -1,9 +1,24 @@
 {
-  "name": "Hello Extensions",
-  "description": "Base Level Extension",
-  "version": "1.0",
   "manifest_version": 3,
+  "name": "Myntra Presets",
+  "description": "Save and apply Myntra filter presets using FastAPI backend.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://localhost:8000/*"
+  ],
   "action": {
-    "default_popup": "presets.html"
+    "default_title": "Open Myntra Presets",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "MyntraPresets.png",
+    "32": "MyntraPresets.png",
+    "64": "MyntraPresets.png",
+    "128": "MyntraPresets.png"
   }
 }

@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Myntra Presets</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <script src="../static/jquery.js"></script>
+  </head>
+  <body>
+    <h1>Myntra Presets</h1>
+    {% if user_is_authenticated %}
+        <p>Welcome, {{ user_email }}!</p>
+        <a href="/add_preset"><button>Add current filters as preset</button></a>
+        <h2>Your Presets:</h2>
+        <ul id="presets-list">
+            <li>
+              <strong>Preset Name:</strong>1212<br>
+              <button class="apply-preset" data-preset-url="asdasdasdasdasasdas">Apply this preset</button>
+            </li>
+            {% for preset_id, preset_data in presets.items() %}
+            <li>
+              <strong>Preset Name:</strong> {{ preset_id }}<br>
+              <button class="apply-preset" data-preset-url="{{ preset_data }}">Apply this preset</button>
+            </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Login to manage your presets.</p>
+          <a href="/" id="backBtn"><button>Sign In</button></a>
+        </p>
+    {% endif %}
+    <script src="../static/presets.js"></script>
+</body>
+</html>

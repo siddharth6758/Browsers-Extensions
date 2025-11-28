@@ -1,0 +1,60 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  margin: 0;
+  padding: 12px;
+}
+
+.preset-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  padding: 16px 18px 18px;
+}
+
+.preset-card h2 {
+  margin: 0 0 12px;
+  color: #ff3e6c;
+  font-size: 1.3rem;
+}
+
+label {
+  display: block;
+  margin: 8px 0 4px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #f1f2f6;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-radius: 6px;
+  background: #ff3e6c;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.95rem;
+  margin-top: 6px;
+}
+
+button:hover {
+  background: #e6355f;
+}
+
+.msg {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #333;
+}
